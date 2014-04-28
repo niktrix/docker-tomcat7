@@ -24,4 +24,5 @@ RUN ln -s /bin/true /sbin/initctl
 RUN apt-get -y install tomcat7
 # change path for tomcat7
 RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> /etc/default/tomcat7
-
+# open default tomcat port
+EXPOSE 8080
